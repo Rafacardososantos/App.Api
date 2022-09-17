@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t9YtkoIHSBKaqsEWdM0d/1WBDTHHGG9MHQEkRDA7Q+A=",
+  "Hash": "mzFqx5DrFs2Y55KJt3OqQW39wNp68zBY6wWqsU+jkXM=",
   "Source": "App.Web",
   "BasePath": "_content/App.Web",
   "Mode": "Default",
@@ -153,6 +153,40 @@
       "OriginalItemSpec": "wwwroot\\js\\pages\\cidadesformularios.js"
     },
     {
+      "Identity": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\js\\pages\\Pessoa.js",
+      "SourceId": "App.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\",
+      "BasePath": "_content/App.Web",
+      "RelativePath": "js/pages/Pessoa.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pages\\Pessoa.js"
+    },
+    {
+      "Identity": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\js\\pages\\pessoasformularios.js",
+      "SourceId": "App.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\",
+      "BasePath": "_content/App.Web",
+      "RelativePath": "js/pages/pessoasformularios.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pages\\pessoasformularios.js"
+    },
+    {
       "Identity": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\js\\services\\CidadeService.js",
       "SourceId": "App.Web",
       "SourceType": "Discovered",
@@ -170,12 +204,12 @@
       "OriginalItemSpec": "wwwroot\\js\\services\\CidadeService.js"
     },
     {
-      "Identity": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\js\\services\\PessoaService.js",
       "SourceId": "App.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\",
       "BasePath": "_content/App.Web",
-      "RelativePath": "js/site.js",
+      "RelativePath": "js/services/PessoaService.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,7 +218,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\js\\services\\PessoaService.js"
     },
     {
       "Identity": "C:\\Users\\Predator\\source\\repos\\App\\App.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

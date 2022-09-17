@@ -1,6 +1,6 @@
-﻿async function CidadeBuscaPorCep(cep) {
+﻿async function PessoaBusca(cpf) {
     return new Promise((resolve, reject) => {
-        Get('Cidade/BuscaPorCep?cep=' + cep).then(function (response) {
+        Get('Pessoa/Busca?cpf=' + cpf).then(function (response) {
             if (response.status === 'success') {
                 resolve(response.data);
             } else {
@@ -12,24 +12,9 @@
         });
     });
 }
-async function CidadeListaCidades(cep, nome) {
+async function PessoaListaPessoa(cpf, nome) {
     return new Promise((resolve, reject) => {
-        Get('Cidade/ListaCidades?cep=' + cep + '&nome=' + nome).then(function (response) {
-            if (response.status === 'success') {
-                resolve(response.data);
-            } else {
-                reject(response.message);
-            }
-        }, function (err) {
-            console.error(err);
-            reject('Erro desconhecido');
-        });
-    });
-}
-
-async function CidadeSalvar( cep) {
-    return new Promise((resolve, reject) => {
-        Post('Cidade/Salvar?cep=' + cep + '&nome=' + nome + '&estado=' + estado).then(function (response) {
+        Get('Pessoa/ListaPessoa?cpf=' + cpf + '&nome=' + nome).then(function (response) {
             if (response.status === 'success') {
                 resolve(response.data);
             } else {
@@ -42,9 +27,9 @@ async function CidadeSalvar( cep) {
     });
 }
 
-async function CidadeRemover(id) {
+async function PessoaSalvar(nome, cpf, email) {
     return new Promise((resolve, reject) => {
-        Delete('Cidade/Remover?id=' + id).then(function (response) {
+        Post('Pessoa/Salvar?nome=' + nome + '&cpf=' + cpf + '&email=' + email).then(function (response) {
             if (response.status === 'success') {
                 resolve(response.data);
             } else {
@@ -56,3 +41,17 @@ async function CidadeRemover(id) {
         });
     });
 }
+
+async function PessoaRemover(id) {
+    return new Promise((resolve, reject) => {
+        Delete('Pessoa/Remover?id=' + id).then(function (response) {
+            if (response.status === 'success') {
+                resolve(response.data);
+            } else {
+                reject(response.message);
+            }
+        }, function (err) {
+            console.error(err);
+            reject('Erro desconhecido');
+        });
+    });

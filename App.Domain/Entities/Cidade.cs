@@ -11,9 +11,9 @@ namespace App.Domain.Entities
     {
         [Key]
         public Guid Id { get; set; }
-        public string Cep { get; set; }
-        public string Nome { get; set; }
-        public string Estado { get; set; }
+        public string? Cep { get; set; }
+        public string? Nome { get; set; }
+        public string? Estado { get; set; }
         
         public bool Ativo { get; set; }
 

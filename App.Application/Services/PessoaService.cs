@@ -17,31 +17,27 @@ namespace App.Application.Services
         {
             _repository = repository;
         }
-
         public Pessoa Busca(string Cpf)
         {
-            var retornoPessoa = _repository.Query(x => x.Cpf == Cpf).FirstOrDefault();          
+            var retornoPessoa = _repository.Query(x => x.Cpf == Cpf).FirstOrDefault();
             return retornoPessoa;
         }
-
-        public void Remover(Guid id)
-        {
-            _repository.Delete(id);
-        }
-
-        public void Salvar(Pessoa obj)
-        {
-            _repository.Save(obj);
-            _repository.SaveChanges();
-        }
-
-        public List<Pessoa> ListaPessoa(string Cpf, string Nome)
+        public List<Pessoa> ListaPessoa(string? Cpf, string? Nome)
         {
             var listaPessoas = _repository.Query(
               x => x.Nome.Contains(Nome)
               ).ToList();
 
             return listaPessoas;
+        }
+        public void Salvar(Pessoa obj)
+        {
+            _repository.Save(obj);
+            _repository.SaveChanges();
+        }
+        public void Remover(Guid id)
+        {
+            _repository.Delete(id);
         }
     }
 }

@@ -31,16 +31,14 @@ namespace App.Application.Services
 
             return listaCidades;
         }
-
-        public void Remover(Guid id)
-        {
-            _repository.Delete(id);
-            _repository.SaveChanges();
-        }
-
         public void Salvar(Cidade obj)
         {
             _repository.Save(obj);
+            _repository.SaveChanges();
+        }
+        public void Remover(Guid id)
+        {
+            _repository.Delete(id);
             _repository.SaveChanges();
         }
     }
